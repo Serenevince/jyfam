@@ -1,0 +1,578 @@
+/* ================================================================
+   christmas.css  –  Jesus Youth Family Gathering 2026
+   Christmas theme overlay. Remove this file and its <link> tag
+   after Christmas to revert to the default theme.
+
+   Contents
+    1. Palette tokens
+    2. Utilities
+    3. Global (body, selection, scrollbar, focus)
+    4. Header, navigation, mobile menu
+    5. Buttons and gradient text
+    6. Hero
+    7. Sections and Tailwind colour remaps
+    8. Cards
+    9. Route map
+   10. Forms, modals, lightbox, gallery
+   11. Footer
+   12. Typography
+   13. Decorations (snow, scenes, guiding star, parallax stars)
+   14. Nativity section
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+/* ================================================================
+   1. PALETTE TOKENS
+   Red-dominant palette; green appears only as a 1 px flash in the
+   candy-cane stripe.
+   ================================================================ */
+:root {
+  /* Reds */
+  --xmas-berry:   #a3191f;   /* primary brand red */
+  --xmas-red:     #7b1117;   /* deep red */
+  --xmas-crimson: #5c0a0f;   /* darkest red */
+  --xmas-blush:   #c0282f;   /* brighter red (hover / highlights) */
+
+  /* Neutrals */
+  --xmas-snow:    #fbf8f3;
+  --xmas-ink:     #2b1b1a;
+  --xmas-muted:   #6b5a56;
+  --xmas-line:    #e8dccd;
+
+  /* Gold */
+  --xmas-gold:    #c9933a;
+  --xmas-gold-lt: #f0d080;
+
+  /* Green, used only in the stripe */
+  --xmas-stripe-green: #1f5a3d;
+
+  /* Candy-cane stripe (80 px repeat, one 1 px green flash) */
+  --xmas-cane: repeating-linear-gradient(
+    135deg,
+    var(--xmas-berry)         0    14px,
+    #fff                      14px 20px,
+    var(--xmas-red)           20px 34px,
+    #fff                      34px 40px,
+    var(--xmas-crimson)       40px 54px,
+    #fff                      54px 60px,
+    var(--xmas-stripe-green)  60px 61px,
+    var(--xmas-red)           61px 74px,
+    #fff                      74px 80px
+  );
+
+  /* Shared dark-red gradients */
+  --xmas-grad-banner: linear-gradient(135deg, var(--xmas-crimson) 0%, var(--xmas-red) 55%, var(--xmas-berry) 100%);
+  --xmas-grad-dark:   linear-gradient(135deg, var(--xmas-crimson) 0%, #3a0407 100%);
+}
+
+/* ================================================================zz
+   2. UTILITIES
+   ================================================================ */
+.text-xmas-berry { color: var(--xmas-berry); }
+.text-xmas-snow  { color: var(--xmas-snow); }
+.text-xmas-ink   { color: var(--xmas-ink); }
+.bg-xmas-berry   { background-color: var(--xmas-berry); }
+.bg-xmas-snow    { background-color: var(--xmas-snow); }
+.font-cormorant  { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+/* Optional candy-cane dividers (uncomment to enable) */
+.xmas-cane-edge::before { 
+  content: ""; 
+  display: block; 
+  height: 3px; 
+  width: 100%; 
+  /* background: rgb(7, 7, 53); */
+}
+
+footer::before { 
+  content: ""; 
+  display: block; 
+  height: 7px; 
+  /* background: rgb(255, 255, 255);  */
+}
+
+
+/* ================================================================
+   3. GLOBAL
+   ================================================================ */
+body {
+  background-color: var(--xmas-snow) !important;
+  color: var(--xmas-ink) !important;
+}
+
+::selection {
+  background: var(--xmas-berry);
+  color: #fff;
+}
+
+::-webkit-scrollbar-thumb       { background: var(--xmas-red) !important; }
+::-webkit-scrollbar-thumb:hover { background: var(--xmas-berry) !important; }
+
+/* Focus ring (WCAG AA) */
+*:focus-visible {
+  outline: 3px solid var(--xmas-berry) !important;
+  outline-offset: 2px !important;
+}
+
+/* ================================================================
+   4. HEADER, NAVIGATION, MOBILE MENU
+   ================================================================ */
+.xmas-topbar {
+  background: var(--xmas-grad-banner) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-header {
+  background: rgba(1, 43, 25, 0.96) !important;   /* --xmas-crimson */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+header nav a,
+.mobile-nav-link {
+  color: rgba(251, 248, 243, 0.85) !important;
+}
+header nav a:hover,
+.mobile-nav-link:hover {
+  color: var(--xmas-gold-lt) !important;
+}
+
+#mobile-menu {
+  background: rgba(1, 136, 68, 0.98) !important;
+}
+
+/* Festive branding */
+header .font-outfit.font-black,
+#mobile-menu a[href="#family-offering"],
+header nav a[href="#family-offering"] {
+  color: var(--xmas-gold-lt) !important;
+}
+
+/* ================================================================
+   5. BUTTONS AND GRADIENT TEXT
+   ================================================================ */
+.btn-gold {
+  background: linear-gradient(135deg, var(--xmas-berry) 0%, var(--xmas-red) 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(123, 17, 23, 0.35) !important;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, var(--xmas-blush) 0%, var(--xmas-red) 100%) !important;
+  box-shadow: 0 6px 20px rgba(123, 17, 23, 0.5) !important;
+}
+
+.btn-outline-gold {
+  border-color: var(--xmas-berry) !important;
+  color: var(--xmas-berry) !important;
+}
+.btn-outline-gold:hover {
+  background: var(--xmas-berry) !important;
+  color: #fff !important;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, var(--xmas-berry) 0%, var(--xmas-blush) 50%, var(--xmas-gold) 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* ================================================================
+   6. HERO
+   ================================================================ */
+#slideshow {
+  background-color: #0b1220 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark veil for text readability, with a faint red tint in one corner */
+.hero-slide .absolute.inset-0.bg-gradient-to-t {
+  background-image:
+    linear-gradient(to top,
+      rgba(11, 18, 32, 0.90) 0%,
+      rgba(11, 18, 32, 0.62) 40%,
+      rgba(11, 18, 32, 0.50) 70%,
+      rgba(11, 18, 32, 0.40) 100%),
+    linear-gradient(135deg,
+      rgba(140, 28, 42, 0.22) 0%,
+      rgba(140, 28, 42, 0) 50%) !important;
+}
+
+#slideshow h1.font-cinzel {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+  letter-spacing: 0.04em;
+}
+#slideshow p {
+  color: #eef2f7 !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+#slideshow .text-amber-400 {
+  color: var(--xmas-gold-lt) !important;
+}
+
+/* Professional red for the main button */
+#slideshow .btn-gold {
+  background: linear-gradient(135deg, #9b2335 0%, #7a1a29 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35) !important;
+}
+#slideshow .btn-gold:hover {
+  background: linear-gradient(135deg, #ab2b3f 0%, #86202f 100%) !important;
+}
+#slideshow a:not(.btn-gold) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: .35rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 9999px;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(155, 35, 53, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(6px);
+}
+
+/* Active dot is white, since red disappears on the dark pill */
+.hero-dot.bg-amber-400 {
+  background-color: #fff !important;
+}
+
+/* ================================================================
+   7. SECTIONS AND TAILWIND COLOUR REMAPS
+   ================================================================ */
+.subtle-navy-pattern {
+  background-color: var(--xmas-crimson) !important;
+  background-image: radial-gradient(rgba(201, 147, 58, 0.10) 1px, transparent 0) !important;
+}
+
+#intercession { background-color: var(--xmas-snow) !important; }
+#testimonies  { background-color: #fff !important; }
+#gallery      { background-color: #f0ede7 !important; }
+#route-map    { background-color: #fff !important; }
+
+#invitation h2 { color: #fff !important; }
+
+/* Amber → red / gold */
+.bg-amber-500     { background-color: var(--xmas-berry) !important; }
+.bg-amber-100     { background-color: rgba(163, 25, 31, 0.08) !important; }
+.border-amber-300 { border-color: rgba(163, 25, 31, 0.3) !important; }
+.text-amber-800   { color: var(--xmas-red) !important; }
+.text-amber-700   { color: var(--xmas-berry) !important; }
+.text-amber-400,
+.text-amber-300   { color: var(--xmas-gold-lt) !important; }
+.text-amber-200   { color: #f5dba0 !important; }
+
+/* Navy headings → deep red */
+.text-navy-950,
+h2.text-navy-950,
+h3.text-navy-950 {
+  color: var(--xmas-crimson) !important;
+}
+
+/* Intercession counter card top borders */
+.border-t-red-600     { border-top-color: var(--xmas-berry) !important; }
+.border-t-blue-600    { border-top-color: var(--xmas-blush) !important; }
+.border-t-amber-500   { border-top-color: var(--xmas-gold) !important; }
+.border-t-emerald-600 { border-top-color: var(--xmas-red) !important; }
+
+/* Keep Secret Santa's own scoped colours */
+.ss .bg-amber-100,
+.ss .text-amber-800,
+.ss .text-amber-700,
+.ss .text-amber-400,
+.ss .text-amber-300 {
+  background-color: revert !important;
+  color: revert !important;
+  border-color: revert !important;
+}
+
+/* Invitation language toggle */
+#invitation #lang-toggle-en.bg-amber-500,
+#invitation #lang-toggle-ml.bg-amber-500 {
+  /* background: var(--xmas-berry) !important; */
+  color: #fff !important;
+}
+
+/* Invitation dark glass card */
+.glass-card-dark {
+  background: linear-gradient(135deg, rgba(34, 10, 90, 0.85), rgba(4, 64, 71, 0.92)) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Subzone table */
+.subzone-row:hover {
+  background-color: rgba(163, 25, 31, 0.06) !important;
+}
+
+/* ================================================================
+   8. CARDS
+   ================================================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-color: rgba(232, 220, 205, 0.8) !important;
+  box-shadow: 0 10px 30px -10px rgba(92, 10, 15, 0.10) !important;
+}
+
+/* Mixed corners */
+#testimonies figure {
+  border-radius: 20px 6px 20px 6px !important;
+  border-color: var(--xmas-line) !important;
+  background: #fde7f0 !important;
+}
+#intercession .glass-card.rounded-2xl { border-radius: 18px 6px 18px 6px !important; }
+.glass-card.border-l-4                { border-radius: 6px 18px 6px 18px !important; }
+.gallery-tile                         { border-radius: 18px 4px 18px 4px !important; }
+
+/* ================================================================
+   9. ROUTE MAP
+   ================================================================ */
+#route-map .bg-gradient-to-r {
+  background: rgb(104, 17, 65) !important;  /* temporary placeholder for the route map gradient */
+}
+
+/* Dark card (the second selector has higher specificity, so both are listed) */
+#route-map .bg-gradient-to-br,
+#route-map .rounded-3xl.border.border-slate-800 {
+  background: linear-gradient(135deg, rgb(12, 19, 85), rgb(32, 16, 34)) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Info cards */
+#route-map .bg-blue-950\/40,
+#route-map .bg-emerald-950\/40   { background: rgba(92, 10, 15, 0.35) !important; }
+#route-map .border-blue-500\/30  { border-color: rgba(163, 25, 31, 0.4) !important; }
+#route-map .text-blue-300,
+#route-map .text-emerald-300     { color: #f0b8bb !important; }
+#route-map .text-blue-700,
+#route-map .text-emerald-700     { color: var(--xmas-berry) !important; }
+
+/* ================================================================
+   10. FORMS, MODALS, LIGHTBOX, GALLERY
+   ================================================================ */
+#intercession input:focus,
+#intercession select:focus {
+  border-color: var(--xmas-berry) !important;
+  box-shadow: 0 0 0 2px rgba(163, 25, 31, 0.25) !important;
+}
+.focus\:ring-amber-400:focus {
+  box-shadow: 0 0 0 2px rgba(163, 25, 31, 0.3) !important;
+}
+
+#success-modal .bg-white         { border: 2px solid var(--xmas-berry) !important; }
+#success-modal .border-amber-300 { border-color: var(--xmas-berry) !important; }
+#success-modal .bg-amber-100     { background-color: rgba(163, 25, 31, 0.08) !important; }
+#success-modal .text-amber-600   { color: var(--xmas-berry) !important; }
+
+#lightbox-modal  { background-color: rgba(92, 10, 15, 0.90) !important; }
+#lightbox-title  { color: var(--xmas-gold-lt) !important; }
+
+#gallery a[href="gallery.html"] { background-color: var(--xmas-red) !important; }
+#gallery .bg-amber-400 {
+  background-color: var(--xmas-berry) !important;
+  color: #fff !important;
+}
+
+/* ================================================================
+   11. FOOTER
+   ================================================================ */
+footer {
+  background-color: rgb(7, 12, 53)B !important;
+  border-top-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* ================================================================
+   12. TYPOGRAPHY
+   ================================================================ */
+h1, h2, h3, .font-cinzel {
+  font-family: 'Cinzel', serif !important;
+}
+#invitation .text-slate-300,
+#testimonies blockquote,
+.ss-lead,
+.ss-tag,
+.ss-verse {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+section h2.font-cinzel {
+  letter-spacing: 0.03em;
+}
+
+/* ================================================================
+   13. DECORATIONS
+   ================================================================ */
+
+/* ---- Hero snow ---- */
+.xmas-snow-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+.xmas-flake {
+  position: absolute;
+  top: -10px;
+  width: var(--sz, 6px);
+  height: var(--sz, 6px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, var(--op, 0.8));
+  animation: xmas-snow-fall var(--dur, 8s) linear var(--delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+@keyframes xmas-snow-fall {
+  0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: var(--op, 0.8); }
+  80%  { opacity: var(--op, 0.8); }
+  100% { transform: translateY(110vh) translateX(var(--drift, 20px)) rotate(360deg); opacity: 0; }
+}
+
+/* ---- Small accents ---- */
+.xmas-holly-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.xmas-star-accent {
+  display: inline-block;
+  color: var(--xmas-gold);
+  font-size: 1.1em;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+/* ---- Section scenes ---- */
+.xmas-scene {
+  display: block;
+  width: var(--scene-w, 220px);
+  height: var(--scene-h, 180px);
+  flex-shrink: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+.xmas-scene svg {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.xmas-scene--visible svg {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 767px) {
+  .xmas-scene--hide-mobile { display: none !important; }
+}
+
+/* ---- Guiding star ---- */
+#xmas-guiding-star {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+#xmas-guiding-star button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(201, 147, 58, 0.15);
+  border: 1.5px solid rgba(201, 147, 58, 0.5);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+  backdrop-filter: blur(4px);
+}
+#xmas-guiding-star button:hover,
+#xmas-guiding-star button:focus-visible {
+  background: rgba(201, 147, 58, 0.3);
+  border-color: var(--xmas-gold);
+  transform: scale(1.12);
+}
+#xmas-guiding-star .xmas-star-tooltip {
+  font-size: 10px;
+  color: var(--xmas-gold);
+  background: rgba(10, 7, 70, 0.88);
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+#xmas-guiding-star:hover .xmas-star-tooltip,
+#xmas-guiding-star button:focus-visible ~ .xmas-star-tooltip {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  #xmas-guiding-star {
+    right: 10px;
+    bottom: 20px;
+    top: auto;
+    transform: none;
+  }
+  #xmas-guiding-star button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ---- Parallax star layer ---- */
+#xmas-star-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.xmas-para-star {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--xmas-gold-lt) 0%, transparent 70%);
+  width: var(--ps-sz, 4px);
+  height: var(--ps-sz, 4px);
+  opacity: var(--ps-op, 0.35);
+  will-change: transform;
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .xmas-flake { animation: none !important; opacity: 0 !important; }
+  .xmas-scene svg {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ================================================================
+   14. NATIVITY SECTION
+   ================================================================ */
+#xmas-nativity {
+  background: linear-gradient(to bottom, #f0ede7 0%, var(--xmas-snow) 100%);
+  padding: 3rem 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+#xmas-nativity::before {
+  content: "";
+  display: block;
+  height: 7px;
+  background: var(--xmas-cane);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}

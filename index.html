@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Gathering 2026 | Jesus Youth Thrissur</title>
+  <meta name="description" content="Official website for Jesus Youth Thrissur Zone Annual Family Gathering 2026 at St. Paul's C.E.H.S.S., Kuriachira. Join our intercession, read testimonies, and find route directions.">
+  
+  <!-- Scroll-to-top on every load/refresh — must run before anything else -->
+  <script>if('scrollRestoration'in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              800: '#132a4e',
+              900: '#0c1d36',
+              950: '#07111e'
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309'
+            },
+            /* Christmas palette */
+            holly:  { DEFAULT: '#1f5a3d', dark: '#123d2a' },
+            berry:  { DEFAULT: '#a3191f', dark: '#7b1117' },
+            xsnow:  { DEFAULT: '#fbf8f3' },
+            xink:   { DEFAULT: '#2b1b1a' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Leaflet CSS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Canvas Confetti for Celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=3.0">
+  <!-- Christmas Theme — remove this line after Christmas -->
+  <link rel="stylesheet" href="assets/css/christmas.css?v=1.0">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-navy-900">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+   <!-- Preloader Starts -->
+<div class="preloader" id="preloader">
+    <div class="logopreloader">
+        <img src="assets/images/jywhite.png" alt="Jesus Youth Logo">
+    </div>
+    <div class="loader" id="loader"></div>
+</div>
+<!-- Preloader Ends -->
+  <div class="xmas-topbar text-white text-xs py-2 px-4 border-b border-white/10 bg-red-900">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center">
+    
+    <!-- Left: Title -->
+    <span class="text-amber-200 font-medium">Jesus Youth Thrissur | Family Gathering 2026</span>
+
+    <!-- Right: Styled Pills for Date/Time/Venue -->
+    <div class="flex flex-wrap items-center justify-center gap-2 text-slate-200">
+      <span class="bg-black/20 px-2 py-0.5 rounded-full text-xs">📅 Dec 13 &nbsp;&nbsp;|&nbsp;&nbsp; 12 PM - 5 PM</span>
+      <span class="bg-black/20 px-2 py-0.5 rounded-full text-xs">St. Paul's C.E.H.S.S., Kuriachira</span>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- ================= STICKY HEADER & NAVBAR ================= -->
+  <header class="sticky top-0 z-50 glass-header shadow-lg transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo / Program Branding -->
+        <a href="index.html" class="flex items-center space-x-2 sm:space-x-3 group shrink-0">
+          <img src="assets/images/logo.png" alt="Jesus Youth Logo" class="h-7 sm:h-9 w-auto max-w-[60px] sm:max-w-[80px] object-contain transition-transform duration-300 group-hover:scale-105 shrink-0">
+          <div class="flex items-center space-x-1.5 whitespace-nowrap">
+            <span class="font-cinzel text-sm sm:text-xl lg:text-2xl font-bold tracking-wider text-white">FAMILY GATHERING</span>
+            <span class="font-outfit font-black text-amber-400 text-sm sm:text-xl lg:text-2xl">2026</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-200">
+          <a href="#invitation" class="hover:text-amber-400 transition-colors">Invitation</a>
+          <a href="#testimonies" class="hover:text-amber-400 transition-colors">Testimonies</a>
+          <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
+          <a href="#route-map" class="hover:text-amber-400 transition-colors">Venue &amp; Map</a>
+          <a href="#family-offering" class="hover:text-amber-400 transition-colors text-amber-300 font-semibold">Secret Santa</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="#intercession" class="btn-gold px-4 py-2 rounded-xl text-sm font-bold flex items-center space-x-2 shadow-lg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+            <span>Interceed Now</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-toggle" type="button" class="p-2 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-950/98 border-t border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="#invitation" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:text-amber-400 hover:bg-white/5">Invitation</a>
+      <a href="#testimonies" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:text-amber-400 hover:bg-white/5">Testimonies</a>
+      <a href="#gallery" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:text-amber-400 hover:bg-white/5">Photo Gallery</a>
+      <a href="#route-map" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:text-amber-400 hover:bg-white/5">Route Map &amp; How to Reach</a>
+      <a href="#family-offering" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-amber-300 hover:bg-white/5 font-semibold">Secret Santa</a>
+      <div class="pt-2">
+        <a href="#intercession" class="btn-gold block text-center py-2.5 rounded-xl font-bold text-sm">
+          Interceed Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 1. HEADER HERO CAROUSEL: PHOTOS & VIDEOS SLIDESHOW ================= -->
+<section id="slideshow" class="relative bg-navy-950 overflow-hidden select-none">
+
+  <!-- Slides Container -->
+  <div class="relative h-[480px] sm:h-[560px] md:h-[640px] w-full overflow-hidden">
+    <!-- Christmas snowfall layer (CSS only, hero only) -->
+    <div class="xmas-snow-layer" aria-hidden="true" id="xmas-hero-snow">
+      <!-- Snowflakes injected by christmas.js -->
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="hero-slide carousel-slide active absolute inset-0">
+      <img src="assets/images/trail_lourdesSubzone.jpeg" alt="Jesus Youth Thrissur Family Gathering Adoration" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my 
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Worship -->
+    <div class="hero-slide carousel-slide absolute inset-0">
+      <img src="assets/images/slide2-worship.JPG" alt="Jesus Youth Praise & Worship Night" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my house, we will serve the Lord." Gather with hundreds of Catholic families across Thrissur for a weekend of grace, healing, and fellowship.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Adoration -->
+    <div class="hero-slide carousel-slide absolute inset-0">
+      <img src="assets/images/slide3-adoration.JPG" alt="Jesus Youth Thrissur Adoration Vigil" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my house, we will serve the Lord." Gather with hundreds of Catholic families across Thrissur for a weekend of grace, healing, and fellowship.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Youth & Kids -->
+    <div class="hero-slide carousel-slide absolute inset-0">
+      <img src="assets/images/slide4-youth.JPG" alt="Jesus Youth Children and Teens Kingdom Gathering" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my house, we will serve the Lord." Gather with hundreds of Catholic families across Thrissur for a weekend of grace, healing, and fellowship.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="hero-slide carousel-slide absolute inset-0">
+      <img src="assets/images/slide5.jpg" alt="Jesus Youth Thrissur Family Gathering 2026" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my house, we will serve the Lord." Gather with hundreds of Catholic families across Thrissur for a weekend of grace, healing, and fellowship.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="hero-slide carousel-slide absolute inset-0">
+      <img src="assets/images/slide6.jpg" alt="Jesus Youth Thrissur Family Gathering 2026" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <span style="font-size: 30px; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);">Thrissur Zone</span>
+          <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 text-white drop-shadow-md">
+            FAMILY GATHERING <span class="text-amber-400">2026</span>
+          </h1>
+          <p class="font-outfit text-base sm:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed mb-6">
+            "As for me and my house, we will serve the Lord." Gather with hundreds of Catholic families across Thrissur for a weekend of grace, healing, and fellowship.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#invitation" class="btn-gold px-6 py-3 rounded-xl text-sm font-bold shadow-xl">See Invitation</a>
+            <a href="#intercession" class="px-6 py-3 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md transition">Offer Intercession</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls (Previous / Next / Pause) -->
+  <button id="hero-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-navy-900/70 hover:bg-navy-900 text-white flex items-center justify-center border border-white/20 backdrop-blur-md transition shadow-lg" aria-label="Previous Slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+  </button>
+
+  <button id="hero-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-navy-900/70 hover:bg-navy-900 text-white flex items-center justify-center border border-white/20 backdrop-blur-md transition shadow-lg" aria-label="Next Slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+  </button>
+
+  <!-- Carousel Dots & Pause Toggle -->
+  <div class="absolute bottom-6 right-6 z-20 flex items-center space-x-2 bg-navy-950/70 p-2 rounded-full border border-white/15 backdrop-blur-md">
+    <button id="hero-pause-btn" class="p-1 rounded-full hover:bg-white/20 transition" title="Play / Pause Slideshow">
+      <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+    </button>
+    <div class="flex items-center space-x-1.5 px-1">
+      <button class="hero-dot w-8 h-2.5 rounded-full bg-amber-400 transition-all duration-300" data-index="0" aria-label="Slide 1"></button>
+      <button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all duration-300" data-index="1" aria-label="Slide 2"></button>
+      <button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all duration-300" data-index="2" aria-label="Slide 3"></button>
+      <button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all duration-300" data-index="3" aria-label="Slide 4"></button>
+      <button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all duration-300" data-index="4" aria-label="Slide 5"></button>
+      <button class="hero-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all duration-300" data-index="5" aria-label="Slide 6"></button>
+    </div>
+  </div>
+
+</section>
+  <!-- ================= 2. INTERCESSION COUNT UPDATE SECTION ================= -->
+  <section id="intercession" class="xmas-cane-edge py-16 sm:py-24 bg-slate-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-navy-950">
+          INTERCESSION COUNT UPDATE
+         
+        </h2>
+        <div class="w-20 h-1 bg-amber-500 mx-auto my-3 rounded-full"></div>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          The power of the Jesus Youth Family Gathering begins upon our knees. Record your offered <strong>Holy Masses</strong>, <strong>Rosaries</strong>, and <strong>Eucharistic Adoration hours</strong> to uplift the 33rd Family Gathering in spiritual solidarity across all 16 subzones.
+        </p>
+      </div>
+
+      <!-- Live Counters Overview (4 Dynamic Impact Cards) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12">
+        
+        <!-- Counter 1: Holy Masses -->
+        <div class="glass-card p-5 sm:p-6 rounded-2xl border-t-4 border-t-red-600 text-center shadow-md relative overflow-hidden group hover:shadow-xl transition">
+          
+          <div class="text-2xl sm:text-4xl font-black text-navy-950 font-outfit" id="stat-masses">0</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mt-1">Holy Masses Offered</div>
+          <span class="text-[10px] text-red-600 font-medium">Sacrifice of the Altar</span>
+        </div>
+
+        <!-- Counter 2: Holy Rosaries -->
+        <div class="glass-card p-5 sm:p-6 rounded-2xl border-t-4 border-t-blue-600 text-center shadow-md relative overflow-hidden group hover:shadow-xl transition">
+          
+          <div class="text-2xl sm:text-4xl font-black text-navy-950 font-outfit" id="stat-rosaries">0</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mt-1">Rosaries Prayed</div>
+          <span class="text-[10px] text-blue-600 font-medium">Mother Mary's Intercession</span>
+        </div>
+
+        <!-- Counter 3: Adoration Hours (Min 30 mins rule) -->
+        <div class="glass-card p-5 sm:p-6 rounded-2xl border-t-4 border-t-amber-500 text-center shadow-md relative overflow-hidden group hover:shadow-xl transition">
+         
+          <div class="text-2xl sm:text-4xl font-black text-navy-950 font-outfit" id="stat-adoration">0.0</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mt-1">Adoration Hours</div>
+          <span class="text-[10px] text-amber-600 font-medium">Min. 30 Mins Per Session</span>
+        </div>
+
+        <!-- Counter 4: Total Intercessors -->
+        <div class="glass-card p-5 sm:p-6 rounded-2xl border-t-4 border-t-emerald-600 text-center shadow-md relative overflow-hidden group hover:shadow-xl transition">
+          
+          <div class="text-2xl sm:text-4xl font-black text-navy-950 font-outfit" id="stat-intercessors">0</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mt-1">Spiritual Warriors</div>
+          <span class="text-[10px] text-emerald-600 font-medium">Across 16 Subzones</span>
+        </div>
+
+      </div>
+
+      <!-- Main Form & Subzone Live Activity Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Prayer Entry Form (7 cols) -->
+        <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-xl bg-white">
+          <div class="flex items-center justify-between mb-6 border-b border-slate-100 pb-4">
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-navy-950">Add Your Prayer Offering</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Every prayer strengthens our families in Christ</p>
+            </div>
+            <span id="live-tracker-badge" class="px-2.5 py-1 text-xs font-semibold bg-amber-100 text-amber-800 rounded-full cursor-default select-none" title="Live Prayer Updates">
+              Live Tracker
+            </span>
+          </div>
+
+          <form id="intercession-form" class="space-y-6">
+            
+            <!-- Error message container -->
+            <div id="form-error-msg" class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-medium"></div>
+
+            <!-- 1. Spiritual Counts Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              
+              <!-- Holy Masses Stepper -->
+              <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <label for="intercession-masses" class="block text-xs font-bold text-slate-700 mb-1">Holy Masses</label>
+                <span class="text-[10px] text-slate-400 block mb-2">Offered for Gathering</span>
+                <div class="flex items-center justify-center space-x-2">
+                  <button type="button" class="stepper-btn decrement w-8 h-8 rounded-lg bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-200" data-target="intercession-masses">-</button>
+                  <input type="number" id="intercession-masses" name="masses" min="0" value="0" class="w-14 text-center font-bold text-navy-950 bg-white border border-slate-300 rounded-lg py-1 focus:ring-2 focus:ring-amber-400">
+                  <button type="button" class="stepper-btn increment w-8 h-8 rounded-lg bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-200" data-target="intercession-masses">+</button>
+                </div>
+              </div>
+
+              <!-- Rosary Stepper -->
+              <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <label for="intercession-rosaries" class="block text-xs font-bold text-slate-700 mb-1">Holy Rosaries</label>
+                <span class="text-[10px] text-slate-400 block mb-2">Decades or Full</span>
+                <div class="flex items-center justify-center space-x-2">
+                  <button type="button" class="stepper-btn decrement w-8 h-8 rounded-lg bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-200" data-target="intercession-rosaries">-</button>
+                  <input type="number" id="intercession-rosaries" name="rosaries" min="0" value="0" class="w-14 text-center font-bold text-navy-950 bg-white border border-slate-300 rounded-lg py-1 focus:ring-2 focus:ring-amber-400">
+                  <button type="button" class="stepper-btn increment w-8 h-8 rounded-lg bg-white border border-slate-300 text-slate-700 font-bold hover:bg-slate-200" data-target="intercession-rosaries">+</button>
+                </div>
+              </div>
+
+              <!-- Adoration Time (Min 30 mins rule strictly enforced!) -->
+              <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <label for="intercession-adoration" class="block text-xs font-bold text-slate-700 mb-1">Adoration Time</label>
+                <span class="text-[10px] text-amber-700 font-semibold block mb-2">Min. 30 Mins Required</span>
+                <div class="relative">
+                  <select id="intercession-adoration" name="adoration" class="w-full text-xs font-bold text-navy-950 bg-white border border-slate-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400">
+                    <option value="0">0 mins (No Adoration)</option>
+                    <option value="30">30 minutes (0.5 hr)</option>
+                    <option value="45">45 minutes (0.75 hr)</option>
+                    <option value="60">1 Hour (60 mins)</option>
+                    <option value="90">1.5 Hours (90 mins)</option>
+                    <option value="120">2 Hours</option>
+                    <option value="180">3 Hours</option>
+                    <option value="240">4 Hours</option>
+                    <option value="300">5+ Hours</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="adoration-validation-msg" class="hidden text-xs text-amber-700 font-semibold bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+              ⚠️ Adoration spent must be a minimum of 30 minutes.
+            </div>
+
+            <!-- 2. Personal Information Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              
+              <!-- Full Name (Required) -->
+              <div>
+                <label for="intercession-name" class="block text-xs font-bold text-slate-700 mb-1">
+                  Your Full Name <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="intercession-name" name="name" required placeholder="e.g. Antony Varghese" class="w-full px-4 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition">
+              </div>
+
+              <!-- Subzone Dropdown (16 Subzones strictly included) -->
+              <div>
+                <label for="intercession-subzone" class="block text-xs font-bold text-slate-700 mb-1">
+                  Your Subzone <span class="text-red-500">*</span>
+                </label>
+                <select id="intercession-subzone" name="subzone" required class="w-full px-4 py-2.5 text-sm bg-white border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition font-medium text-slate-700">
+                  <option value="" disabled selected>-- Select Your Subzone --</option>
+                  <option value="Lourdes">Lourdes Subzone</option>
+                  <option value="Basilica">Basilica Subzone</option>
+                  <option value="Pattikad">Pattikad Subzone</option>
+                  <option value="Kandassankadavu">Kandassankadavu Subzone</option>
+                  <option value="Puthur">Puthur Subzone</option>
+                  <option value="Pudukkad">Pudukkad Subzone</option>
+                  <option value="Ollur">Ollur Subzone</option>
+                  <option value="Pazhuvil">Pazhuvil Subzone</option>
+                  <option value="Palayoor">Palayoor Subzone</option>
+                  <option value="Mattom">Mattom Subzone</option>
+                  <option value="Kottekad">Kottekad Subzone</option>
+                  <option value="Parappur">Parappur Subzone</option>
+                  <option value="Wadakkanchery">Wadakkanchery Subzone</option>
+                  <option value="Velur">Velur Subzone</option>
+                  <option value="Erumappetty">Erumappetty Subzone</option>
+                  <option value="Chelakara">Chelakara Subzone</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full btn-gold py-3.5 px-6 rounded-xl font-bold text-base flex items-center justify-center space-x-2 shadow-lg">
+              <span>🕊️ Submit Intercession Offering</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+
+            <p class="text-center text-[11px] text-slate-400">
+              * Minimum 30 mins required for adoration entries. Submissions instantly update the zone prayer total.
+              <button type="button" id="admin-reset-trigger" class="opacity-0 hover:opacity-10 text-[9px] cursor-default select-none ml-1 transition" tabindex="-1" aria-hidden="true">🔒</button>
+            </p>
+
+          </form>
+        </div>
+
+        <!-- Right: Subzone-Wise Category Statistics (5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="glass-card p-5 sm:p-6 rounded-3xl border border-slate-200/90 shadow-xl bg-white subzone-stats-card">
+            
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-navy-950 flex items-center gap-2">
+                  <span>🏛️ Subzone Prayer Statistics</span>
+                </h3>
+                <p class="text-xs text-slate-500 mt-0.5">Category breakdown across all 16 subzones</p>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-bold bg-amber-100 text-amber-800 rounded-full shrink-0">
+                16 Subzones
+              </span>
+            </div>
+
+            <!-- Table Container -->
+            <div class="subzone-table-wrapper max-h-[460px] overflow-y-auto overflow-x-auto rounded-2xl border border-slate-100">
+              <table class="w-full text-left text-xs border-collapse subzone-stats-table">
+                <thead class="sticky top-0 bg-slate-100/95 backdrop-blur z-10 border-b border-slate-200">
+                  <tr class="text-[11px] font-bold text-slate-600">
+                    <th class="py-2.5 px-3">Subzone</th>
+                    <th class="py-2.5 px-2 text-center text-red-700" title="Holy Masses">Mass</th>
+                    <th class="py-2.5 px-2 text-center text-blue-700" title="Rosaries">Rosary</th>
+                    <th class="py-2.5 px-2 text-center text-amber-700" title="Adoration Hours">Adoration</th>
+                    <th class="py-2.5 px-2 text-center text-emerald-700" title="Intercessors">Warriors</th>
+                  </tr>
+                </thead>
+                <tbody id="subzone-stats-tbody" class="divide-y divide-slate-100 bg-white">
+                  <!-- Rendered dynamically by IntercessionManager -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Footnote Info -->
+            <div class="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Auto-updates in real time</span>
+              </span>
+              <span class="font-medium text-amber-600">Thrissur Zone</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ================= 3. INVITATION SECTION (CAROUSEL: ENGLISH & MALAYALAM - 33RD GATHERING) ================= -->
+  <section id="invitation" class="xmas-cane-edge py-16 sm:py-24 subtle-navy-pattern text-white relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-10">
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:10px">
+            <polygon points="12,2 14.4,9.2 22,9.2 16,14 18.4,21.2 12,17 5.6,21.2 8,14 2,9.2 9.6,9.2" fill="#c9933a" opacity="0.9"/>
+          </svg>
+          A HEARTFELT INVITATION
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-left:10px">
+            <polygon points="12,2 14.4,9.2 22,9.2 16,14 18.4,21.2 12,17 5.6,21.2 8,14 2,9.2 9.6,9.2" fill="#c9933a" opacity="0.9"/>
+          </svg>
+        </h2>
+        <div class="w-20 h-1 bg-amber-500 mx-auto my-3 rounded-full"></div>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
+          For the 33rd time, the Jesus Youth Thrissur Zone family gathers under the shelter of divine grace.
+        </p>
+
+        <!-- Language Quick Switcher -->
+        <div class="inline-flex p-1 rounded-xl bg-white/10 border border-white/20 mt-6 backdrop-blur-md">
+          <button id="lang-toggle-en" class="px-5 py-2 rounded-lg text-xs font-bold transition-all bg-amber-500 text-white shadow-md">
+            English Invitation
+          </button>
+          <button id="lang-toggle-ml" class="px-5 py-2 rounded-lg text-xs font-bold transition-all bg-slate-100 text-slate-700">
+            മലയാളം ക്ഷണക്കത്ത്
+          </button>
+        </div>
+      </div>
+
+      <!-- Invitation Carousel Container -->
+      <div class="relative glass-card-dark p-6 sm:p-10 md:p-12 rounded-3xl border border-white/15 shadow-2xl">
+        
+        <!-- Slide 2: English Invitation (Translated) -->
+        <div class="invitation-slide hidden fade-slide">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+            <div class="flex items-center space-x-3">
+              
+              <div>
+                <h3 class="text-lg sm:text-xl font-bold text-white">Dear Jesus Youth family members!</h3>
+                <p class="text-xs text-amber-400 font-medium">December 13, Sunday &bull; 12:00 PM to 5:00 PM</p>
+              </div>
+            </div>
+            <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-slate-300 font-semibold hidden sm:inline-block">
+              English
+            </span>
+          </div>
+
+          <div class="space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed">
+            <p class="text-base sm:text-lg font-semibold text-amber-300">
+              Once again, a blessed Christmas season is here!
+            </p>
+            <p>
+              The Jesus Youth family members in Thrissur are coming together once again in the sacred memory of Christmas. Let us wait in prayer and share the joy of Christ.
+            </p>
+            <p>
+              For Jesus Youth, these are days of divine grace and joy. Let us express our gratitude as the Holy See has granted definitive recognition to our movement. His promise to guide us step-by-step is being fulfilled through the times. Let us join hands to grow with greater commitment in the ministry of the Kingdom of God.
+            </p>
+            <div class="bg-amber-500/10 p-4 rounded-2xl border-l-4 border-amber-400 text-amber-200 text-sm">
+              You are lovingly invited to our family gathering, which will be held on <strong>Sunday, December 13, from 12:00 PM to 5:00 PM</strong> at <strong>St. Paul’s School, Kuriachira</strong>.
+            </div>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-400">
+            <div>
+              <span class="text-white font-semibold">Fr. Roy Velakombil</span><br>
+              (Archdiocesan Director)
+            </div>
+            <div>
+              <span class="text-white font-semibold">Fr. Bijoy Ponparambil</span><br>
+              (Archdiocesan Assistant Director)
+            </div>
+            <div>
+              <span class="text-white font-semibold">Alwin Davis</span><br>
+              (Coordinator)<br>
+              <span class="text-amber-400 font-bold">📞 9995987858</span>
+            </div>
+            <div>
+              <span class="text-white font-semibold">Chriswin Lingson</span><br>
+              (General Coordinator)<br>
+              <span class="text-amber-400 font-bold">📞 7560885982</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Malayalam Invitation (മലയാളം ക്ഷണക്കത്ത്) -->
+<div class="invitation-slide hidden fade-slide">
+  <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
+        🕊️
+      </div>
+      <div>
+        <h3 class="font-malayalam text-lg sm:text-xl font-bold text-white">പ്രിയമുള്ള ജീസസ് യൂത്ത് കുടുംബാംഗങ്ങളെ!</h3>
+        <p class="text-xs text-amber-400 font-medium">ഡിസംബർ 13 ഞായർ &bull; ഉച്ചക്ക് 12 മണി മുതൽ വൈകീട്ട് 5 മണി വരെ</p>
+      </div>
+    </div>
+    <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-slate-300 font-semibold hidden sm:inline-block">
+      മലയാളം
+    </span>
+  </div>
+
+  <div class="font-malayalam space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed">
+    <p class="text-base sm:text-lg font-semibold text-amber-300">
+      വീണ്ടും ഒരു ക്രിസ്തുമസ് കാലം വന്നെത്തി!
+    </p>
+    <p>
+      തൃശ്ശൂരിലെ ജീസസ് യൂത്ത് കുടുംബാംഗങ്ങൾ ക്രിസ്തുമസിൻ്റെ പുണ്യസ്മരണയിൽ വീണ്ടും ഒത്തുചേരുകയാണ്. നമുക്ക് പ്രാർത്ഥനയോടെ കാത്തിരിക്കാം, ക്രിസ്തുവിന്റെ ആനന്ദം പങ്കുവയ്ക്കാം.
+    </p>
+    <p>
+      ജീസസ് യൂത്തിനെ സംബന്ധിച്ചിടത്തോളം ഇത് ദൈവാനുഗ്രഹത്തിന്റെയും ആനന്ദത്തിന്റെയും ദിനങ്ങളാണ്. പരിശുദ്ധ സിംഹാസനം നമ്മുടെ മൂവ്മെന്റിന് സ്ഥിര അംഗീകാരം നൽകിയതിനെ ഓർത്ത് നമുക്ക് നന്ദി പ്രകാശിപ്പിക്കാം. നമ്മെ പടിപടിയായി വളർത്തുമെന്ന അവിടുത്തെ വാഗ്ദാനം കാലങ്ങളായി നിറവേറുന്നു. ദൈവരാജ്യ ശുശ്രൂഷയിൽ കൂടുതൽ പ്രതിബദ്ധതയോടെ വളരാൻ നമുക്ക് കൈകോർക്കാം.
+    </p>
+    <div class="bg-amber-500/10 p-4 rounded-2xl border-l-4 border-amber-400 text-amber-200 text-sm">
+      ഡിസംബർ 13 ഞായർ ഉച്ചക്ക് 12 മണി മുതൽ വൈകീട്ട് 5 മണി വരെ കുരിയച്ചിറ സെന്റ് പോൾസ് സ്കൂളിൽ വെച്ച് നടക്കുന്ന നമ്മുടെ കുടുംബസംഗമത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു.
+    </div>
+  </div>
+
+  <div class="mt-8 pt-4 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-400 font-malayalam">
+    <div>
+      <span class="text-white font-semibold">Fr. Roy Velakombil</span><br>
+      (അതിരൂപത ഡയറക്ടർ)
+    </div>
+    <div>
+      <span class="text-white font-semibold">Fr. Bijoy Ponparambil</span><br>
+      (അതിരൂപത അസിസ്റ്റന്റ് ഡയറക്ടർ)
+    </div>
+    <div>
+      <span class="text-white font-semibold">Alwin Davis</span><br>
+      (കോർഡിനേറ്റർ)<br>
+      <span class="text-amber-400 font-bold">📞 9995987858</span>
+    </div>
+    <div>
+      <span class="text-white font-semibold">Chriswin Lingson</span><br>
+      (ജനറൽ കോർഡിനേറ്റർ)<br>
+      <span class="text-amber-400 font-bold">📞 7560885982</span>
+    </div>
+  </div>
+</div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="flex items-center justify-between mt-8 pt-4 border-t border-white/10">
+          <button id="invite-prev-btn" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center gap-1 text-xs font-semibold" aria-label="Previous Invitation slide">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span>Previous</span>
+          </button>
+          
+          <div class="flex items-center space-x-2">
+            <button class="invite-dot w-8 h-2.5 rounded-full bg-amber-500 transition-all duration-300" data-index="0" aria-label="English Invite"></button>
+            <button class="invite-dot w-2.5 h-2.5 rounded-full bg-slate-400 transition-all duration-300" data-index="1" aria-label="Malayalam Invite"></button>
+          </div>
+
+          <button id="invite-next-btn" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center gap-1 text-xs font-semibold" aria-label="Next Invitation slide">
+            <span>Next</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ================= 4. TESTIMONIES SECTION (COMPACT) ================= -->
+<section id="testimonies" class="xmas-cane-edge py-12 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+
+    <!-- Header -->
+    <div class="flex items-end justify-between mb-6">
+      <div>
+        
+        <h2 class="font-cinzel text-2xl sm:text-3xl text-navy-950" flex: center>Testimonies of Grace
+       
+        </h2>
+      </div>
+      <span class="sm:hidden text-xs text-slate-400">Swipe →</span>
+    </div>
+
+    <!-- Cards: swipeable on mobile, 3 across on desktop -->
+    <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4 [&::-webkit-scrollbar]:hidden" style="scrollbar-width:none">
+
+      <!-- Testimony 1: Antony & Sneha -->
+      <figure class="snap-center shrink-0 w-[85%] sm:w-[calc((100%-2rem)/3)] rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col">
+        <span class="text-4xl leading-none text-amber-400 font-serif">&ldquo;</span>
+        <blockquote class="text-sm text-slate-700 leading-relaxed flex-1">
+          The Jesus Youth Family Gathering has become the spiritual cornerstone for our marriage and children over the past six years. Witnessing hundreds of young Catholic families kneeling together in Eucharistic adoration rekindled genuine Christ-centered peace in our home. We invite every family in Thrissur to this 33rd gathering.
+        </blockquote>
+        <figcaption class="flex items-center gap-3 mt-4 pt-4 border-t border-slate-200">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-white text-sm font-bold grid place-items-center">AS</span>
+          <span class="text-xs text-slate-500 leading-tight">
+            <b class="block text-sm text-navy-950">Antony &amp; Sneha</b>
+            Lourdes Subzone
+          </span>
+        </figcaption>
+      </figure>
+
+      <!-- Testimony 2: Jithin Paul -->
+      <figure class="snap-center shrink-0 w-[85%] sm:w-[calc((100%-2rem)/3)] rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col">
+        <span class="text-4xl leading-none text-amber-400 font-serif">&ldquo;</span>
+        <blockquote class="text-sm text-slate-700 leading-relaxed flex-1">
+          Being a young working professional, I often struggled to balance church life and career. The welcoming community and uplifting youth sessions showed me that living an authentic Catholic life with joy is deeply fulfilling. It renewed my prayer life and gave my journey a missionary calling.
+        </blockquote>
+        <figcaption class="flex items-center gap-3 mt-4 pt-4 border-t border-slate-200">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 text-white text-sm font-bold grid place-items-center">JP</span>
+          <span class="text-xs text-slate-500 leading-tight">
+            <b class="block text-sm text-navy-950">Jithin Paul</b>
+            Basilica Subzone
+          </span>
+        </figcaption>
+      </figure>
+
+      <!-- Testimony 3: Dr. Reena & Davis -->
+      <figure class="snap-center shrink-0 w-[85%] sm:w-[calc((100%-2rem)/3)] rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col">
+        <span class="text-4xl leading-none text-amber-400 font-serif">&ldquo;</span>
+        <blockquote class="text-sm text-slate-700 leading-relaxed flex-1">
+          For over twelve years, our family has never missed the annual gathering because God always speaks to our hearts here. The intercessory prayers and sharing circles healed old misunderstandings and brought our teenagers closer to Jesus. It is a golden opportunity for every family.
+        </blockquote>
+        <figcaption class="flex items-center gap-3 mt-4 pt-4 border-t border-slate-200">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-white text-sm font-bold grid place-items-center">RD</span>
+          <span class="text-xs text-slate-500 leading-tight">
+            <b class="block text-sm text-navy-950">Dr. Reena &amp; Davis</b>
+            Ollur Subzone
+          </span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ================= 5. PHOTO GALLERY SECTION (SINGLE CROSSFADE FRAME) ================= -->
+
+
+<section id="gallery" class="xmas-cane-edge py-12 sm:py-16 bg-slate-100">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-6">
+      <span class="text-xs font-bold uppercase tracking-wider text-blue-700">📸 Zone Moments</span>
+      <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-navy-950">Program Photo Gallery</h2>
+      <p class="text-slate-600 text-sm mt-1">Glimpses of joy, sacraments and fellowship across Thrissur Zone. Tap the photo to expand.</p>
+    </div>
+
+    <!-- ONE FRAME: 4 photos cross-fade, each with its own zoom/pan -->
+    <div id="g-frame" class="lightbox-trigger relative aspect-[16/9] sm:aspect-[2/1] rounded-3xl overflow-hidden shadow-xl bg-slate-900 cursor-pointer"
+         data-full-img="" data-title="" data-caption="">
+
+      <div class="gslide absolute inset-0" style="--from:1;--to:1.15;--o:20% 30%"
+           data-full-img="assets/images/slide1-family.svg" data-tag="Family Gathering"
+           data-title="32nd Annual Family Gathering - Holy Mass Celebration"
+           data-caption="Over 600 families gathered at Thrissur for solemn Holy Eucharistic celebration and family blessing."
+           data-short="Solemn Eucharistic celebration and blessing of married couples.">
+        <img src="assets/images/slide1-family.svg" alt="32nd Annual Family Gathering" class="w-full h-full object-cover">
+      </div>
+
+      <div class="gslide absolute inset-0" style="--from:1.2;--to:1;--o:center"
+           data-full-img="assets/images/slide2-worship.svg" data-tag="Youth Ministry"
+           data-title="Thrissur Zone Youth Meet & Music Ministry"
+           data-caption="Praise and worship night led by Jesus Youth Thrissur music ministry igniting hearts with joy."
+           data-short="Praise and worship night led by the Jesus Youth Thrissur band.">
+        <img src="assets/images/slide2-worship.svg" alt="Thrissur Zone Youth Meet" class="w-full h-full object-cover">
+      </div>
+
+      <div class="gslide absolute inset-0" style="--from:1;--to:1.22;--o:80% 70%"
+           data-full-img="assets/images/slide4-youth.svg" data-tag="Teens & Kids"
+           data-title="Kids & Teens Kingdom Fest"
+           data-caption="Special faith formation, fun activities, skits, and songs for children and adolescents during the conference."
+           data-short="Faith formation, games, and worship for the younger generation.">
+        <img src="assets/images/slide4-youth.svg" alt="Kids and Teens Kingdom Fest" class="w-full h-full object-cover">
+      </div>
+
+      <div class="gslide absolute inset-0" style="--from:1.08;--to:1.2;--o:50% 15%"
+           data-full-img="assets/images/slide3-adoration.svg" data-tag="Intercession"
+           data-title="Zone All-Night Intercession Vigil"
+           data-caption="Subzone representatives joining in deep candle-lit Eucharistic adoration for the spiritual renewal of families."
+           data-short="Candle-lit adoration and rosary procession for family renewal.">
+        <img src="assets/images/slide3-adoration.svg" alt="All Night Intercession Vigil" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Caption overlay -->
+      <div class="absolute inset-x-0 bottom-0 z-10 p-4 sm:p-6 pt-16 bg-gradient-to-t from-navy-950/90 via-navy-950/50 to-transparent text-white pointer-events-none">
+        <div id="g-cap">
+          <span id="g-tag" class="inline-block px-2.5 py-0.5 text-[10px] font-bold bg-amber-400 text-navy-950 rounded-full mb-1"></span>
+          <h4 id="g-title" class="font-bold text-sm sm:text-lg leading-snug pr-24"></h4>
+          <p id="g-desc" class="text-xs sm:text-sm text-slate-200 mt-0.5 pr-24 line-clamp-1"></p>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div id="g-dots" class="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 z-20 flex gap-2">
+        <button class="h-2 w-2 rounded-full bg-white/50 transition-all" aria-label="Photo 1"></button>
+        <button class="h-2 w-2 rounded-full bg-white/50 transition-all" aria-label="Photo 2"></button>
+        <button class="h-2 w-2 rounded-full bg-white/50 transition-all" aria-label="Photo 3"></button>
+        <button class="h-2 w-2 rounded-full bg-white/50 transition-all" aria-label="Photo 4"></button>
+      </div>
+    </div>
+
+    <!-- Show more -->
+<div class="text-center mt-6">
+  <a href="gallery.html" class="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-navy-900 py-3 pl-6 pr-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl">
+    <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
+    <span class="relative">View Full Gallery <span class="text-amber-300">· 20+ photos</span></span>
+    <span class="relative grid h-8 w-8 place-items-center rounded-full bg-amber-400 text-navy-950 transition group-hover:translate-x-1 group-hover:-rotate-45">→</span>
+  </a>
+</div>
+  </div>
+  </section>
+
+
+
+  <!-- ================= 6. VENUE & ROUTE MAP SECTION ================= -->
+  <section id="route-map" class="xmas-cane-edge py-16 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-100 border border-red-300 text-red-800 text-xs font-bold uppercase tracking-wider mb-3">
+          <span>📍 How to Reach</span>
+        </span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-navy-950">
+          PROGRAM VENUE &amp; ROUTE MAP
+        </h2>
+        <div class="w-20 h-1 bg-amber-500 mx-auto my-3 rounded-full"></div>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          Family Gathering 2026 will be hosted at the serene campus of <strong>St. Paul's C.E.H.S.S.</strong>, Kuriachira, Thrissur. Easily accessible by car, two-wheeler, and local public bus service.
+        </p>
+      </div>
+
+      <!-- Venue Quick Info Banner -->
+      <div class="bg-gradient-to-r from-navy-950 via-navy-900 to-blue-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl mb-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-white/10">
+        <div class="space-y-2 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/20 text-red-300 text-xs font-bold border border-red-500/30">
+            <span>⭐ Official Venue Location</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white">St. Paul's C.E.H.S.S., Kuriachira</h3>
+          <p class="text-sm text-slate-300 max-w-xl">
+            St. Paul's Convent English Higher Secondary School, Kuriachira, Thrissur, Kerala - 680006 (Near St. Joseph's Church &amp; Carmel Convent).
+          </p>
+        </div>
+        <div class="flex-shrink-0 flex flex-col sm:flex-row items-center gap-3">
+          <a href="https://maps.app.goo.gl/uFgYVPFwXmHn9VBo7" target="_blank" rel="noopener noreferrer" class="btn-gold px-6 py-3.5 rounded-xl text-sm font-bold shadow-lg flex items-center space-x-2">
+            <span>🗺️ Open in Google Maps</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- DRAWN SCHEMATIC ROUTE MAP (Vector SVG Illustration from Town & NH) -->
+      <div class="mb-8 bg-gradient-to-br from-slate-900 via-navy-950 to-slate-900 rounded-3xl p-5 sm:p-6 shadow-xl border border-slate-800 text-white">
+        
+        <!-- Header inside card -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 mb-4 border-b border-white/10">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <h4 class="text-base sm:text-lg font-bold text-white tracking-wide">Route Network Diagram</h4>
+              <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-400/30">Town &amp; NH 544</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1">Schematic transit illustration connecting Thrissur Round, Kokkalai, NH 544 Bypass, and Kuriachira</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-amber-300 font-semibold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20 hidden sm:inline-block">
+              Venue: St. Paul's C.E.H.S.S., Kuriachira
+            </span>
+            <a href="assets/images/route-map.svg" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-300 hover:text-white px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition flex items-center gap-1.5" title="Open full vector diagram in new tab">
+              <span>Enlarge</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2-Column Balanced Content: Schematic Map + Route Quick Reference -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+          
+          <!-- Col 1: Schematic Diagram (lg:col-span-7 xl:col-span-8) - Reduced size, crisp max-height -->
+          <div class="lg:col-span-7 xl:col-span-8 flex justify-center">
+            <div class="w-full rounded-2xl overflow-hidden bg-slate-950/90 border border-slate-700/60 shadow-inner flex items-center justify-center p-2">
+              <img src="assets/images/route-map.svg" alt="Schematic Route Map to St. Paul's CEHSS Kuriachira" class="w-full h-auto max-h-[300px] sm:max-h-[340px] object-contain">
+            </div>
+          </div>
+
+          <!-- Col 2: Route Quick Reference (lg:col-span-5 xl:col-span-4) - Productive use of space -->
+          <div class="lg:col-span-5 xl:col-span-4 space-y-2.5">
+            
+            <div class="p-3 rounded-xl bg-blue-950/40 border border-blue-500/30">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-bold text-blue-300 flex items-center gap-1.5">
+                  <span>🚗</span>
+                  <span>From Thrissur Town</span>
+                </span>
+                <span class="text-[10px] font-extrabold text-white bg-blue-600/40 px-2 py-0.5 rounded">3.5 KM &bull; 8-10m</span>
+              </div>
+              <p class="text-[11px] text-slate-300 leading-snug">
+                Swaraj Round &rarr; Kokkalai &rarr; Koorkenchery &rarr; Kuriachira.
+              </p>
+            </div>
+
+            <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-bold text-emerald-300 flex items-center gap-1.5">
+                  <span>🛣️</span>
+                  <span>From NH 544 Highway</span>
+                </span>
+                <span class="text-[10px] font-extrabold text-white bg-emerald-600/40 px-2 py-0.5 rounded">4.5 KM &bull; 10-12m</span>
+              </div>
+              <p class="text-[11px] text-slate-300 leading-snug">
+                Kuttanellur bypass exit or Ollur exit directly to school.
+              </p>
+            </div>
+
+            <div class="p-3 rounded-xl bg-amber-950/40 border border-amber-500/30">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+                  <span>🚌</span>
+                  <span>Nearest Bus Stop</span>
+                </span>
+                <span class="text-[10px] font-extrabold text-amber-200 bg-amber-500/30 px-2 py-0.5 rounded">150m Walk</span>
+              </div>
+              <p class="text-[11px] text-slate-300 leading-snug">
+                "Kuriachira St. Paul's School Stop" or Church Stop.
+              </p>
+            </div>
+
+            <a href="https://maps.app.goo.gl/uFgYVPFwXmHn9VBo7" target="_blank" rel="noopener noreferrer" class="w-full py-2 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-navy-950 font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
+              <span style="color:aliceblue;">Open Turn-by-Turn GPS</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Step-by-Step Transit Instructions & Interactive Leaflet Map Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Transit Guide Tabs (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Mode Tabs Switcher -->
+          <div class="flex flex-wrap gap-2 p-1.5 rounded-2xl bg-slate-100 border border-slate-200">
+            <button class="route-tab-btn flex-1 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold bg-navy-900 text-white shadow-md transition" data-route="car">
+              🚗 By Car / Bike
+            </button>
+            <button class="route-tab-btn flex-1 py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-600 hover:bg-slate-100 transition" data-route="bus">
+              🚌 Local Bus Service
+            </button>
+          </div>
+
+          <!-- PANEL 1: BY CAR (From Thrissur Town & From NH 544) -->
+          <div id="route-panel-car" class="route-panel space-y-4">
+            
+            <!-- Route A: From Thrissur Town -->
+            <div class="glass-card p-5 rounded-2xl border-l-4 border-l-blue-600">
+              <div class="flex items-center justify-between mb-2">
+                <h5 class="font-bold text-navy-950 text-sm sm:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-black">1</span>
+                  <span>From Thrissur Town (Sakthan / Swaraj Round)</span>
+                </h5>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700">3.5 KM &bull; 8-10 Mins</span>
+              </div>
+              <ol class="space-y-2 text-xs sm:text-sm text-slate-600 pl-4 list-decimal marker:font-bold marker:text-blue-600">
+                <li>From <strong>Sakthan Thampuran Roundabout / Swaraj Round</strong>, proceed south along the Kokkalai road towards Koorkenchery.</li>
+                <li>Cross the <strong>Koorkenchery Junction</strong> and continue straight onto Thrissur-Ollur Main Road (SH 22).</li>
+                <li>At <strong>Kuriachira Junction</strong>, St. Paul's C.E.H.S.S. campus is located on the right side near St. Joseph's Church.</li>
+                <li>Ample parking space is designated inside the school grounds for participants.</li>
+              </ol>
+            </div>
+
+            <!-- Route B: From NH 544 (National Highway / Bypass) -->
+            <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-600">
+              <div class="flex items-center justify-between mb-2">
+                <h5 class="font-bold text-navy-950 text-sm sm:text-base flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-black">2</span>
+                  <span>From NH 544 (Kochi - Salem Highway Bypass)</span>
+                </h5>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">4.5 KM &bull; 10 Mins</span>
+              </div>
+              <ol class="space-y-2 text-xs sm:text-sm text-slate-600 pl-4 list-decimal marker:font-bold marker:text-emerald-600">
+                <li><strong>Coming from Palakkad / Mannuthy side:</strong> Take the <strong>Kuttanellur bypass exit</strong>, drive via Ollur road directly towards Kuriachira.</li>
+                <li><strong>Coming from Kochi / Chalakudy side:</strong> Exit NH 544 at the <strong>Ollur exit (near Paliakkara)</strong>, join Ollur town and proceed 2.5 km north to Kuriachira.</li>
+                <li>Turn into St. Paul's School gate; Jesus Youth volunteers will guide you at the entrance.</li>
+              </ol>
+            </div>
+
+          </div>
+
+          <!-- PANEL 2: LOCAL BUS SERVICE GUIDE -->
+          <div id="route-panel-bus" class="route-panel hidden space-y-4">
+            
+            <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-500">
+              <h5 class="font-bold text-navy-950 text-base mb-2 flex items-center gap-2">
+                <span>🚌 Direct Local Bus Service to Kuriachira</span>
+              </h5>
+              <p class="text-xs sm:text-sm text-slate-600 mb-3">
+                Frequent private and KSRTC city buses connect Thrissur city stands directly to the school gate bus stop (every 3–5 minutes).
+              </p>
+              
+              <div class="space-y-3">
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                  <span class="text-xs font-bold text-navy-950 block">From Sakthan Thampuran Private Bus Stand:</span>
+                  <p class="text-xs text-slate-600 mt-0.5">Board any bus heading to <strong>Ollur, Chalakudy, Amballur, Puthukkad, or Kodakara</strong>.</p>
+                </div>
+
+                <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+                  <span class="text-xs font-bold text-navy-950 block">From North Bus Stand / Vadakke Stand:</span>
+                  <p class="text-xs text-slate-600 mt-0.5">Board town shuttles marked <strong>Sakthan - Koorkenchery - Kuriachira - Ollur</strong>.</p>
+                </div>
+
+                <div class="bg-amber-50 p-3 rounded-xl border border-amber-200 text-amber-900">
+                  <span class="text-xs font-bold block">🚏 Designated Drop-off Bus Stop:</span>
+                  <p class="text-xs mt-0.5">Ask the conductor for <strong>"Kuriachira St. Paul's School Stop"</strong> or <strong>"Kuriachira Church Stop"</strong>. The venue is just a 2-minute level walk (150 meters) from the bus stop!</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Leaflet Map Box (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="glass-card p-4 rounded-3xl border border-slate-200/90 shadow-xl bg-white">
+            <div class="flex items-center justify-between mb-3 px-1">
+              <div>
+                <h5 class="text-xs sm:text-sm font-bold text-navy-950">Interactive Venue Map</h5>
+                <p class="text-[10px] text-slate-400">Click markers to view route details</p>
+              </div>
+              <a href="https://maps.app.goo.gl/uFgYVPFwXmHn9VBo7" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-red-600 hover:text-red-700 flex items-center gap-1">
+                <span style="color: white;;">Open in App</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+
+            <!-- Leaflet Container -->
+            <div id="venue-leaflet-map" class="w-full h-[380px] rounded-2xl overflow-hidden border border-slate-200 z-10"></div>
+
+            <div class="flex items-center justify-between text-[11px] text-slate-500 mt-3 px-1">
+              <span class="flex items-center gap-1"><span class="w-3 h-1 bg-blue-600 inline-block"></span> Town Route</span>
+              <span class="flex items-center gap-1"><span class="w-3 h-1 bg-emerald-600 inline-block"></span> NH 544 Route</span>
+              <span class="font-semibold text-red-600">✝️ St. Paul's CEHSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ================= 7. LOVE & FAMILY SHARING OFFERING SECTION ================= -->
+
+  
+
+  <section id="family-offering" class="ss" aria-labelledby="ss-title">
+    <div class="ss-wrap">
+
+      <header class="ss-head">
+        <h2 class="ss-title" id="ss-title">Be a Secret Santa this Christmas</h2>
+        <p class="ss-lead">
+          “Let us lovingly share from what we have with our family, like a gift left at the doorstep this Christmas.”
+        </p>
+      </header>
+
+      <div class="ss-peek" id="ssPeek" aria-hidden="true">
+        <div class="ss-peek-santa">🎅</div>
+        <div class="ss-peek-bubble">Psst… this stays between us.</div>
+      </div>
+
+      <div class="ss-grid">
+
+        <!-- ===== Gift card ===== -->
+        <div class="ss-card">
+          <div class="ss-ribbon"><span>Give a Present</span></div>
+          <div class="ss-card-body">
+            <p class="ss-tag">To: <b>Family Gathering</b><br>From: <b>A Secret Santa</b></p>
+            <button type="button" class="ss-cta" id="ssGive">Leave my secret gift</button>
+            <p class="ss-fine" style="font-size: 10px;">Click to open GPay, PhonePe, Paytm or any UPI app.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <blockquote class="ss-verse" style="margin-bottom:0">
+        "But when thou doest alms, let not thy left hand know what thy right hand doeth: that thine alms may be in secret."
+        <cite>Matthew 6:3–4</cite>
+      </blockquote>
+
+    </div>
+
+    <!-- ===== Santa pop-up ===== -->
+    <div class="ss-modal" id="ssModal" role="dialog" aria-modal="true" aria-labelledby="ssModalTitle">
+      <div class="ss-dialog">
+        <div class="ss-dialog-santa" aria-hidden="true">🎅</div>
+
+        <div id="ssStepGive">
+          <h3 id="ssModalTitle">Ho ho ho!</h3>
+          <p>Scan, tap, or transfer — your gift stays secret.</p>
+
+          <!-- UPI App button — direct href, works as a real user-gesture link -->
+          <a class="ss-btn primary" id="ssPay"
+             href="upi://pay?pa=sanjochirammel%40oksbi&pn=SANJO%20JOHN%20C&cu=INR&tn=Secret%20Santa%20Gift%20-%20Family%20Gathering%202026"
+             target="_blank" rel="noopener">
+            Open UPI App (GPay / PhonePe / Paytm)
+          </a>
+
+          <!-- QR + all details block -->
+          <div class="ss-modal-pay">
+
+            <!-- QR -->
+            <div class="ss-modal-qr-wrap">
+              <img src="assets/images/upi-qr.svg" alt="UPI QR code">
+            </div>
+            <p class="ss-qr-hint" style="display:none;font-size:.75rem;color:#a3191f;text-align:center;padding:.4rem .6rem 0;font-weight:600;">
+              Scan this QR with your phone's camera or any UPI app
+            </p>
+
+            <!-- UPI ID row -->
+            <div class="ss-modal-row">
+              <div class="ss-modal-row-label">UPI ID</div>
+              <div class="ss-modal-row-body">
+                <code id="ssDesk">sanjochirammel@oksbi</code>
+                <button type="button" class="ss-mcopy" data-copy="sanjochirammel@oksbi" id="ssDeskCopy">Copy</button>
+              </div>
+            </div>
+
+            <!-- Bank details -->
+            <div class="ss-modal-row">
+              <div class="ss-modal-row-label">Account</div>
+              <div class="ss-modal-row-body">
+                <code>SANJO JOHN C</code>
+                <button type="button" class="ss-mcopy" data-copy="SANJO JOHN C">Copy</button>
+              </div>
+            </div>
+            <div class="ss-modal-row">
+              <div class="ss-modal-row-label">A/C No.</div>
+              <div class="ss-modal-row-body">
+                <code>39816303603</code>
+                <button type="button" class="ss-mcopy" data-copy="39816303603">Copy</button>
+              </div>
+            </div>
+            <div class="ss-modal-row">
+              <div class="ss-modal-row-label">IFSC</div>
+              <div class="ss-modal-row-body">
+                <code>SBIN0070735</code>
+                <button type="button" class="ss-mcopy" data-copy="SBIN0070735">Copy</button>
+              </div>
+            </div>
+            <div class="ss-modal-row">
+              <div class="ss-modal-row-label">GPay</div>
+              <div class="ss-modal-row-body">
+                <code>6238121323</code>
+                <button type="button" class="ss-mcopy" data-copy="6238121323">Copy</button>
+              </div>
+            </div>
+
+          </div>
+
+          <button type="button" class="ss-btn ghost" id="ssClose">Not now</button>
+        </div>
+
+        <div id="ssStepThanks" hidden>
+          <h3>Thank you, Secret Santa!</h3>
+          <p>“It is more blessed to give than to receive.” (Acts 20:35)</p>
+          <button type="button" class="ss-btn primary" id="ssDone">Merry Christmas 🎄</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ================= LIGHTBOX MODAL (PHOTO GALLERY EXPAND) ================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/90 backdrop-blur-md p-4 sm:p-6" role="dialog" aria-modal="true">
+    <div class="relative max-w-4xl w-full bg-navy-900 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+      <button id="lightbox-close-btn" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-navy-950/80 text-white flex items-center justify-center hover:bg-red-600 transition" aria-label="Close Lightbox">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <div class="max-h-[70vh] bg-black flex items-center justify-center overflow-hidden">
+        <img id="lightbox-img" src="" alt="Full view" class="w-full h-auto max-h-[70vh] object-contain">
+      </div>
+      <div class="p-6 bg-navy-900 text-white">
+        <h3 id="lightbox-title" class="font-cinzel text-lg sm:text-xl font-bold text-amber-400">Program Photo</h3>
+        <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-300 mt-1 font-light"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CELEBRATION SUCCESS MODAL ================= -->
+  <div id="success-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/80 backdrop-blur-sm p-4" role="dialog" aria-modal="true">
+    <div class="relative max-w-md w-full bg-white rounded-3xl p-6 sm:p-8 text-center shadow-2xl border border-amber-300 transform transition-all animate-bounce-short">
+      <div class="w-16 h-16 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-3xl mx-auto mb-4 border-2 border-amber-400">
+        🕊️
+      </div>
+      <h3 class="font-cinzel text-2xl font-bold text-navy-950 mb-2">Intercession Received!</h3>
+      <div id="modal-details" class="mb-6">
+        <!-- Rendered by JS -->
+      </div>
+      <button id="modal-close-btn" type="button" class="btn-gold w-full py-3 rounded-xl font-bold text-sm shadow-md">
+        Continue in Prayer &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= 7. FOOTER (SOCIAL MEDIA & RIGHTS TO THRISSUR ZONE) ================= -->
+  <footer class="bg-navy-950 text-white border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1: Branding & Description (5 cols) -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/images/logo.png" alt="Jesus Youth Logo" class="h-8 w-auto max-w-[80px] object-contain">
+            <div>
+              <span class="font-cinzel text-xl font-bold tracking-wider text-white">JESUS YOUTH</span>
+              <p class="text-xs text-amber-400 font-bold uppercase tracking-wider">Thrissur Zone</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (3 cols) -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold text-amber-400 uppercase tracking-widest">Navigation</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+            <li><a href="#slideshow" class="hover:text-amber-400 transition">Event Highlights</a></li>
+            <li><a href="#intercession" class="hover:text-amber-400 transition">Intercession Count</a></li>
+            <li><a href="#invitation" class="hover:text-amber-400 transition">Invitation</a></li>
+            <li><a href="#testimonies" class="hover:text-amber-400 transition">Testimonies</a></li>
+            <li><a href="gallery.html" class="hover:text-amber-400 transition">Gallery</a></li>
+            <li><a href="#route-map" class="hover:text-amber-400 transition">Venue &amp; Route Map</a></li>
+            <li><a href="#family-offering" class="hover:text-amber-400 transition text-amber-300 font-semibold">Share Love</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social Media of Thrissur Zone with Official Logos (4 cols) -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-xs font-bold text-amber-400 uppercase tracking-widest">Connect with Thrissur Zone</h4>
+          <p class="text-xs text-slate-300 font-light">
+            Stay tuned to our latest announcements, reflections, and program updates across our official social channels:
+          </p>
+
+          <!-- Social Media Icons with Official Logos -->
+          <div class="flex items-center space-x-3 pt-1">
+            
+            <!-- Instagram -->
+            <a href="https://instagram.com/jesus_youth_thrissur" 
+              target="_blank" 
+              class="w-11 h-11 rounded-2xl bg-white/5 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 border border-white/10 hover:border-transparent flex items-center justify-center text-white transition-all duration-300 group shadow-md"
+              title="Follow Jesus Youth Thrissur on Instagram (@jythrissur)" 
+              aria-label="Instagram">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+           
+            <a href="https://facebook.com/jythrissur" target="_blank" rel="noopener noreferrer"
+              class="w-11 h-11 rounded-2xl bg-white/5 hover:bg-blue-600 border border-white/10 hover:border-transparent flex items-center justify-center text-white transition-all duration-300 group shadow-md"
+              title="Like Jesus Youth Thrissur on Facebook" aria-label="Facebook">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+
+            <!-- Gmail / Email -->
+           
+            <a href="mailto:jymediaministrytcr@gmail.com" 
+              class="w-11 h-11 rounded-2xl bg-white/5 hover:bg-red-600 border border-white/10 hover:border-transparent flex items-center justify-center text-white transition-all duration-300 group shadow-md"
+              title="Email us at jymediaministrytcr@gmail.com" aria-label="Gmail">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+           
+            <a href="https://www.youtube.com/@jesusyouththrissur5333" target="_blank" rel="noopener noreferrer"
+              class="w-11 h-11 rounded-2xl bg-white/5 hover:bg-red-700 border border-white/10 hover:border-transparent flex items-center justify-center text-white transition-all duration-300 group shadow-md"
+              title="Subscribe to Jesus Youth Thrissur Zone on YouTube" aria-label="YouTube">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BOTTOM COPYRIGHT NOTICE (ALL RIGHTS GOES TO THRISSUR ZONE) -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 text-center sm:text-left">
+        <div>
+          <p class="font-medium text-slate-300">
+            &copy; 2026 Jesus Youth Thrissur Zone. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Leaflet JS for Map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- App JS Modules -->
+  <script src="assets/js/intercession.js?v=4.0"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/app.js?v=2.0"></script>
+  <!-- Christmas Parallax and Scenes — remove this line after Christmas -->
+  <script src="assets/js/christmas.js?v=1.0"></script>
+
+</body>
+</html>

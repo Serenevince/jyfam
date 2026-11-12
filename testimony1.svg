@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="t1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#t1)" stroke="#f59e0b" stroke-width="4" />
+  <!-- Couple avatar silhouette -->
+  <circle cx="62" cy="62" r="22" fill="#ffffff" />
+  <path d="M 38 120 C 38 95 86 95 86 120 Z" fill="#ffffff" />
+  <circle cx="98" cy="65" r="20" fill="#fde68a" />
+  <path d="M 75 120 C 75 98 122 98 122 120 Z" fill="#fde68a" />
+</svg>

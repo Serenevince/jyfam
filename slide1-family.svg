@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="50%" stop-color="#172a45" />
+      <stop offset="100%" stop-color="#2d1b4e" />
+    </linearGradient>
+    <radialGradient id="sunburst" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#f59e0b" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#0a192f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg1)" />
+  <rect width="1200" height="600" fill="url(#sunburst)" />
+  
+  <!-- Silhouette of Monstrance / Eucharistic Blessing -->
+  <g transform="translate(600, 240)">
+    <circle cx="0" cy="0" r="55" fill="#fef08a" opacity="0.9" filter="drop-shadow(0 0 35px #f59e0b)" />
+    <circle cx="0" cy="0" r="30" fill="#ffffff" />
+    <!-- Radiant rays -->
+    <g stroke="#f59e0b" stroke-width="3" opacity="0.8">
+      <line x1="0" y1="-80" x2="0" y2="-60" />
+      <line x1="0" y1="60" x2="0" y2="80" />
+      <line x1="-80" y1="0" x2="-60" y2="0" />
+      <line x1="60" y1="0" x2="80" y2="0" />
+      <line x1="-55" y1="-55" x2="-42" y2="-42" />
+      <line x1="42" y1="42" x2="55" y2="55" />
+      <line x1="-55" y1="55" x2="-42" y2="42" />
+      <line x1="42" y1="-42" x2="55" y2="-55" />
+    </g>
+    <!-- Cross on top -->
+    <path d="M0 -80 L0 -105 M-10 -93 L10 -93" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+    <!-- Stand -->
+    <path d="M-8 40 L-16 110 L16 110 L8 40 Z" fill="#f59e0b" />
+    <rect x="-35" y="110" width="70" height="12" rx="4" fill="#d97706" />
+  </g>
+
+  <!-- Silhouette of Families Praying with Hands Raised -->
+  <g fill="#07111e" opacity="0.95">
+    <!-- Family cluster left -->
+    <path d="M 120 600 Q 180 430 240 600 Z" />
+    <circle cx="180" cy="410" r="28" />
+    <path d="M 230 600 Q 280 460 330 600 Z" />
+    <circle cx="280" cy="440" r="24" />
+    <path d="M 270 600 Q 300 510 330 600 Z" />
+    <circle cx="300" cy="500" r="16" />
+
+    <!-- Family cluster center-right -->
+    <path d="M 780 600 Q 840 440 900 600 Z" />
+    <circle cx="840" cy="420" r="26" />
+    <path d="M 880 600 Q 940 420 1000 600 Z" />
+    <circle cx="940" cy="400" r="30" />
+    <path d="M 970 600 Q 1020 480 1070 600 Z" />
+    <circle cx="1020" cy="460" r="20" />
+  </g>
+
+  <rect x="0" y="470" width="1200" height="130" fill="linear-gradient(transparent, #07111e)" />
+</svg>

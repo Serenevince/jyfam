@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Photo Gallery | Jesus Youth Thrissur Zone</title>
+  <meta name="description" content="Explore photos and memories of various Jesus Youth programs, family gatherings, youth rallies, and Eucharistic vigils across Thrissur Zone.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              800: '#132a4e',
+              900: '#0c1d36',
+              950: '#07111e'
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309'
+            },
+            /* Christmas palette */
+            holly:  { DEFAULT: '#1f5a3d', dark: '#123d2a' },
+            berry:  { DEFAULT: '#a3191f', dark: '#7b1117' },
+            xsnow:  { DEFAULT: '#fbf8f3' },
+            xink:   { DEFAULT: '#2b1b1a' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=3.0">
+  <!-- Christmas Theme — remove this line after Christmas -->
+  <link rel="stylesheet" href="assets/css/christmas.css?v=1.0">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-navy-900">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="xmas-topbar text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <a href="index.html" class="text-amber-400 hover:underline flex items-center gap-1 font-bold">
+          <span>&larr; Return to Family Gathering 2026 Home</span>
+        </a>
+      </div>
+      <div class="text-slate-300 hidden sm:block">
+        Jesus Youth Thrissur Zone Program Archives &bull; 33rd Gathering Year
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER NAVBAR ================= -->
+  <header class="sticky top-0 z-50 glass-header shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="assets/images/logo.png" alt="Jesus Youth Logo" class="h-8 sm:h-9 w-auto max-w-[80px] object-contain">
+          <div>
+            <span class="font-cinzel text-lg sm:text-xl font-bold tracking-wider text-white">ZONE PHOTO GALLERY</span>
+            <p class="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Thrissur Zone Archives</p>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center space-x-4">
+          <a href="index.html" class="text-xs sm:text-sm font-semibold text-slate-200 hover:text-amber-400 transition">
+            Home
+          </a>
+          <a href="index.html#intercession" class="text-xs sm:text-sm font-semibold text-slate-200 hover:text-amber-400 transition">
+            Intercession
+          </a>
+          <a href="index.html#route-map" class="text-xs sm:text-sm font-semibold text-slate-200 hover:text-amber-400 transition">
+            Venue &amp; Route
+          </a>
+          <a href="index.html#intercession" class="btn-gold hidden sm:inline-flex px-4 py-2 rounded-xl text-xs font-bold">
+            Add Intercession Count
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO BANNER ================= -->
+  <section class="bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950 text-white py-14 sm:py-20 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-semibold mb-4">
+        <span>📸 Full Program Archive</span>
+      </span>
+      <h1 class="font-cinzel text-3xl sm:text-5xl font-bold tracking-tight mb-4">
+        MEMORIES OF FAITH &amp; FELLOWSHIP
+      </h1>
+      <p class="font-outfit text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
+        Relive sacred moments from previous Family Gatherings, youth conferences, night vigils, and subzone fellowship programs that have shaped Jesus Youth Thrissur Zone over 33 glorious years.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-8 pt-4">
+        <button class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 text-navy-950 shadow-md transition" data-filter="all">
+          All Programs (12)
+        </button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition" data-filter="family">
+          Family Gatherings
+        </button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition" data-filter="youth">
+          Youth &amp; Music
+        </button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition" data-filter="adoration">
+          Adoration &amp; Vigils
+        </button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition" data-filter="subzone">
+          Subzone Programs
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALLERY GRID SECTION ================= -->
+  <main class="py-14 sm:py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Photos Grid -->
+      <div id="full-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <!-- Item 1: Family -->
+        <div class="gallery-item family group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide1-family.svg"
+             data-title="32nd Annual Family Gathering - Holy Mass Celebration"
+             data-caption="Over 600 families gathered for the solemn Holy Eucharistic celebration and family blessing.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide1-family.svg" alt="32nd Family Gathering" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Family Gathering</span>
+              <span class="text-[10px] text-slate-400">Thrissur</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">32nd Family Gathering Holy Mass</h4>
+            <p class="text-xs text-slate-500 mt-1">Holy Eucharistic sacrifice celebrated by Bishop &amp; clergy.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Youth -->
+        <div class="gallery-item youth group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide2-worship.svg"
+             data-title="Thrissur Zone Youth Rally & Music Ministry"
+             data-caption="Praise and worship night led by Jesus Youth Thrissur music ministry igniting hearts with joy.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide2-worship.svg" alt="Youth Music Night" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">Youth &amp; Music</span>
+              <span class="text-[10px] text-slate-400">Basilica</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Zone Youth Rally &amp; Worship</h4>
+            <p class="text-xs text-slate-500 mt-1">High-energy Catholic youth praise session.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Adoration -->
+        <div class="gallery-item adoration group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide3-adoration.svg"
+             data-title="All-Night Eucharistic Vigil at Lourdes Cathedral"
+             data-caption="Subzone representatives joining in deep candle-lit Eucharistic adoration for family renewal.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide3-adoration.svg" alt="All Night Adoration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">Adoration</span>
+              <span class="text-[10px] text-slate-400">Lourdes</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">All-Night Adoration Vigil</h4>
+            <p class="text-xs text-slate-500 mt-1">Silent worship and deep intercession for families.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Youth / Teens -->
+        <div class="gallery-item youth group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide4-youth.svg"
+             data-title="Teens & Kids Kingdom Fest"
+             data-caption="Faith formation games, worship, skits, and fellowship for the next generation.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide4-youth.svg" alt="Teens Kingdom Fest" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">Teens &amp; Kids</span>
+              <span class="text-[10px] text-slate-400">St. Thomas</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Kids Kingdom &amp; Teens Track</h4>
+            <p class="text-xs text-slate-500 mt-1">Tailored spiritual formation for youth and kids.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Subzone -->
+        <div class="gallery-item subzone group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide1-family.svg"
+             data-title="Palayoor Subzone Pilgrimage & Agape"
+             data-caption="Families of Palayoor subzone gathered at St. Thomas Church for a day of prayer and sharing.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide1-family.svg" alt="Palayoor Subzone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Subzone Program</span>
+              <span class="text-[10px] text-slate-400">Palayoor</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Palayoor Subzone Family Agapē</h4>
+            <p class="text-xs text-slate-500 mt-1">Local fellowship and community lunch.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Family -->
+        <div class="gallery-item family group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide3-adoration.svg"
+             data-title="Couples Prayer & Renewal Encounter"
+             data-caption="Special retreat for married couples focusing on sacramental grace and communication in marriage.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide3-adoration.svg" alt="Couples Prayer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Family Gathering</span>
+              <span class="text-[10px] text-slate-400">Ollur</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Couples Renewal Encounter</h4>
+            <p class="text-xs text-slate-500 mt-1">Husbands and wives renewing marital vows.</p>
+          </div>
+        </div>
+
+        <!-- Item 7: Subzone -->
+        <div class="gallery-item subzone group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide4-youth.svg"
+             data-title="Wadakkanchery & Velur Joint Youth Fellowship"
+             data-caption="Youth leaders from Wadakkanchery and Velur coming together for leadership training and mission.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide4-youth.svg" alt="Wadakkanchery Subzone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Subzone Program</span>
+              <span class="text-[10px] text-slate-400">Wadakkanchery</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Subzone Leaders Orientation</h4>
+            <p class="text-xs text-slate-500 mt-1">Discipleship training for upcoming leaders.</p>
+          </div>
+        </div>
+
+        <!-- Item 8: Adoration -->
+        <div class="gallery-item adoration group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide2-worship.svg"
+             data-title="Marian Candlelight Procession"
+             data-caption="Glorious Marian procession accompanied by hymns and rosary prayers across the venue grounds.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide2-worship.svg" alt="Marian Procession" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">Adoration</span>
+              <span class="text-[10px] text-slate-400">Kuriachira</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Marian Rosary Procession</h4>
+            <p class="text-xs text-slate-500 mt-1">Honoring Our Lady with light and prayers.</p>
+          </div>
+        </div>
+
+        <!-- Item 9: Subzone -->
+        <div class="gallery-item subzone group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide1-family.svg"
+             data-title="Pattikad & Puthur Medical Outreach"
+             data-caption="Jesus Youth medical professionals providing health checkups and elder care in remote subzone parishes.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide1-family.svg" alt="Pattikad Outreach" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Subzone Program</span>
+              <span class="text-[10px] text-slate-400">Pattikad</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Medical &amp; Elderly Outreach</h4>
+            <p class="text-xs text-slate-500 mt-1">Mercy ministry by Jesus Youth volunteers.</p>
+          </div>
+        </div>
+
+        <!-- Item 10: Youth -->
+        <div class="gallery-item youth group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide4-youth.svg"
+             data-title="Campus Discipleship Meet"
+             data-caption="Catholic college students coming together to share Christ with courage on campus.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide4-youth.svg" alt="Campus Meet" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">Youth &amp; Music</span>
+              <span class="text-[10px] text-slate-400">Vimala College</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Campus Discipleship Meet</h4>
+            <p class="text-xs text-slate-500 mt-1">Student witnesses and gospel sharing.</p>
+          </div>
+        </div>
+
+        <!-- Item 11: Family -->
+        <div class="gallery-item family group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide1-family.svg"
+             data-title="Family Eucharistic Adoration & Blessing of Children"
+             data-caption="Priests praying individual blessings over each baby and child in the presence of the Blessed Sacrament.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide1-family.svg" alt="Blessing of Children" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Family Gathering</span>
+              <span class="text-[10px] text-slate-400">Thrissur</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">Solemn Blessing of Children</h4>
+            <p class="text-xs text-slate-500 mt-1">Anointing and dedicated prayers for every child.</p>
+          </div>
+        </div>
+
+        <!-- Item 12: Subzone -->
+        <div class="gallery-item subzone group rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200 hover:shadow-xl transition cursor-pointer lightbox-trigger"
+             data-full-img="assets/images/slide3-adoration.svg"
+             data-title="Chelakara & Mattom Intercession Chain"
+             data-caption="Continuous 24-hour prayer chain conducted by parish prayer groups in rural subzones.">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
+            <img src="assets/images/slide3-adoration.svg" alt="Chelakara Subzone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Subzone Program</span>
+              <span class="text-[10px] text-slate-400">Chelakara</span>
+            </div>
+            <h4 class="font-bold text-navy-950 text-sm">24-Hour Parish Prayer Chain</h4>
+            <p class="text-xs text-slate-500 mt-1">Continuous rosary &amp; adoration relays.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Back to Main Page CTA -->
+      <div class="mt-16 text-center">
+        <a href="index.html" class="inline-flex items-center space-x-2 btn-gold px-8 py-3.5 rounded-2xl font-bold text-sm shadow-xl">
+          <span>&larr; Back to Family Gathering 2026</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= LIGHTBOX MODAL ================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/90 backdrop-blur-md p-4 sm:p-6" role="dialog" aria-modal="true">
+    <div class="relative max-w-4xl w-full bg-navy-900 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+      <button id="lightbox-close-btn" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-navy-950/80 text-white flex items-center justify-center hover:bg-red-600 transition" aria-label="Close Lightbox">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+      <div class="max-h-[70vh] bg-black flex items-center justify-center overflow-hidden">
+        <img id="lightbox-img" src="" alt="Full view" class="w-full h-auto max-h-[70vh] object-contain">
+      </div>
+      <div class="p-6 bg-navy-900 text-white">
+        <h3 id="lightbox-title" class="font-cinzel text-lg sm:text-xl font-bold text-amber-400">Program Photo</h3>
+        <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-300 mt-1 font-light"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-navy-950 text-white border-t border-white/10 pt-12 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10 text-center md:text-left">
+        <div>
+          <span class="font-cinzel text-lg font-bold text-white">JESUS YOUTH THRISSUR ZONE</span>
+          <p class="text-xs text-amber-400 font-semibold">Family Gathering 2026 &bull; St. Paul's C.E.H.S.S., Kuriachira</p>
+        </div>
+
+        <!-- Social Media Logos -->
+        <div class="flex items-center space-x-3">
+          <a href="https://instagram.com/jythrissur" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 border border-white/10 flex items-center justify-center text-white transition" aria-label="Instagram">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://facebook.com/jythrissur" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-blue-600 border border-white/10 flex items-center justify-center text-white transition" aria-label="Facebook">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="mailto:jythrissurzone@gmail.com" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-red-600 border border-white/10 flex items-center justify-center text-white transition" aria-label="Gmail">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-6 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Jesus Youth Thrissur Zone. All rights reserved.</p>
+        <p class="text-[11px] text-slate-500 mt-1">All rights of this program and its materials are strictly reserved to Thrissur zone.</p>
+      </div>
+    </div>
+  </footer>
+<script src="assets/js/app.js"></script>
+  <!-- Christmas Theme — remove this line after Christmas -->
+  <script src="assets/js/christmas.js?v=1.0"></script>
+
+</body>
+</html>

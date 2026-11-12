@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="t2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="76" fill="url(#t2)" stroke="#f59e0b" stroke-width="4" />
+  <!-- Young youth avatar silhouette -->
+  <circle cx="80" cy="58" r="28" fill="#ffffff" />
+  <path d="M 40 128 C 40 96 120 96 120 128 Z" fill="#ffffff" />
+  <circle cx="80" cy="116" r="6" fill="#f59e0b" />
+</svg>
